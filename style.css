@@ -1,0 +1,88 @@
+ /* Внутренний CSS для стилизации элементов */
+ body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header, main, footer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #007BFF; /* Синий цвет для заголовков */
+}
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul, ol {
+    margin-left: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 20px;
+    font-style: italic;
+    margin: 20px 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+#text__paragraphs p {
+    margin-bottom: 20px;
+}
+
+#text__paragraphs p::first-letter {
+    font-size: 200%;
+}
+
+#text__paragraphs p:hover {
+    background-color: #b1b1b1;
+}
+
+li:nth-child(even) {
+    background-color: #ddd;
+}
+
+li:nth-child(odd) {
+    background-color: #eee;
+}
+
+#text__paragraphs p::before {
+    content: "→ ";
+}
+
+/* Используем ::selection для стилизации выделенного текста */
+::selection {
+    background: #ffb7b7; /* светло-розовый цвет */
+    color: #fff;
+}
